@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/My-Portfolio/static/css/main.0026ee27.css",
-    "main.js": "/My-Portfolio/static/js/main.10ae1f6a.js",
+    "main.css": "/My-Portfolio/static/css/main.9510ee62.css",
+    "main.js": "/My-Portfolio/static/js/main.e18af09d.js",
     "static/media/game-project05.png": "/My-Portfolio/static/media/game-project05.e15dd1697707b4fa2cf2.png",
     "static/media/project05.png": "/My-Portfolio/static/media/project05.a994d9723fb6d583d3ce.png",
     "static/media/game-project01.png": "/My-Portfolio/static/media/game-project01.489fc86ed15b06f97015.png",
@@ -24,11 +24,11 @@
     "static/media/game-project07.png": "/My-Portfolio/static/media/game-project07.a5989bd88b3010bcba9e.png",
     "static/media/game-project04.png": "/My-Portfolio/static/media/game-project04.c03656a3acf0ca090f90.png",
     "index.html": "/My-Portfolio/index.html",
-    "main.0026ee27.css.map": "/My-Portfolio/static/css/main.0026ee27.css.map",
-    "main.10ae1f6a.js.map": "/My-Portfolio/static/js/main.10ae1f6a.js.map"
+    "main.9510ee62.css.map": "/My-Portfolio/static/css/main.9510ee62.css.map",
+    "main.e18af09d.js.map": "/My-Portfolio/static/js/main.e18af09d.js.map"
   },
   "entrypoints": [
-    "static/css/main.0026ee27.css",
-    "static/js/main.10ae1f6a.js"
+    "static/css/main.9510ee62.css",
+    "static/js/main.e18af09d.js"
   ]
 }
