@@ -1,0 +1,126 @@
+.projects-content h1 {
+  width: 100%;
+  font-family: var(--font-header);
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  line-height: 60px;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.projects-content span {
+  font-size: 18px;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.projects-content span:hover {
+  letter-spacing: 1px;
+}
+.projects-content {
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  padding: 0 0 0 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.websites-container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 2rem 2.5rem;
+  padding: 3rem 2rem;
+}
+.project {
+  width: 280px;
+  background: var(--navbar-background);
+  box-shadow: 0 0 5px 1.1px var(--color-white);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.project:hover {
+  transform: scale(1.05);
+  background-color: var(--color-hover);
+}
+.project h4 {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin: 1.5rem 0 0.6rem;
+}
+.projects-content .project p {
+  font-size: 14px;
+  text-align: justify;
+  padding: 0.5rem 1rem;
+  line-height: 20px;
+  height: 200px;
+}
+.project img {
+  width: 100%;
+  height: 170px;
+  cursor: pointer;
+}
+.link-container {
+  margin: 1rem 0;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.link-container a {
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  font-weight: 600;
+  text-align: center;
+  width: 80px;
+  box-shadow: 0 0 5px 2px var(--color-white);
+  padding: 0.3rem;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.link-container a:hover {
+  box-shadow: 0 0 1px 1px var(--color-white);
+}
+.website-projects .project p {
+  width: 95px;
+  height: 100px;
+}
+@media screen and (max-width: 1050px) {
+  .websites-container {
+    grid-template-columns: repeat(2, auto);
+  }
+}
+@media screen and (max-width: 750px) {
+  .websites-container {
+    grid-template-columns: repeat(1, auto);
+    padding: 2.5rem 0;
+  }
+  .projects-content h1 {
+    font-size: 30px;
+    line-height: 50px;
+  }
+  .projects-content span {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .websites-container {
+    grid-template-columns: repeat(4, auto);
+  }
+}
+@keyframes project-scale {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.05);
+  }
+}

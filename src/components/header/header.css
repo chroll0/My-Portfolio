@@ -1,0 +1,11 @@
+.header-container {
+  left: calc(-100% - 250px);
+}
+.active_header-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: var(--navbar-background);
+}

@@ -1,0 +1,160 @@
+.slide-bar,
+.active-slide {
+  height: 100%;
+  width: 60px;
+  background: var(--navbar-background);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--color-white);
+  transition: all 0.5s ease;
+  position: fixed;
+  z-index: 10;
+}
+.active-slide {
+  width: 250px;
+}
+.slide-bar-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.logo-content {
+  margin-bottom: 1.5rem;
+}
+.slide-bar .logo-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slide-bar .logo-content .logo-style {
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: 1.8px;
+  color: var(--color-white);
+  display: none;
+}
+.active-slide .active-logo-content {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8rem 1.5rem;
+  background: var(--hover-color);
+}
+.active-slide .active-logo-content .active-logo-style {
+  font-family: var(--font-header);
+  font-size: 24px;
+  letter-spacing: 2px;
+  color: var(--color-white);
+  animation-name: slide;
+  animation-duration: 0.8s;
+}
+.close-nav {
+  height: 29px;
+  color: var(--color-white);
+  font-size: 26px;
+  cursor: pointer;
+  animation-name: slide;
+  animation-duration: 0.8s;
+}
+.close-nav:hover {
+  color: var(--navbar-background);
+}
+.open-nav {
+  color: var(--color-white);
+  font-size: 26px;
+  cursor: pointer;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.open-nav:hover {
+  background: var(--hover-color);
+}
+.icon-content {
+  display: flex;
+  flex-direction: column;
+}
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-white);
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0.5rem 0.5rem;
+  margin-top: 0.8rem;
+  height: 55px;
+  width: 100%;
+}
+.active_icon-content .active-icons {
+  justify-content: flex-start;
+  padding: 0.5rem 1.5rem;
+}
+.icon-content .icons span {
+  display: none;
+}
+.active_icon-content .active-icons span {
+  animation-name: slide;
+  animation-duration: 0.8s;
+  margin-left: 2rem;
+  font-size: 19px;
+  letter-spacing: 1px;
+}
+.icons:hover {
+  background: var(--hover-color);
+}
+.account-info {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0.6rem 1.3rem;
+}
+.active-slide .account-info {
+  background: var(--hover-color);
+}
+.active-slide .account-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.account-info img {
+  width: 38px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.slide-bar .account-info .account-name {
+  display: none;
+}
+.active-slide .account-info .account-name {
+  animation-name: slide;
+  animation-duration: 0.8s;
+  display: flex;
+  flex-direction: column;
+}
+.active-slide .account-info .account-name :nth-child(1) {
+  font-size: 16px;
+  font-weight: 600;
+}
+.active-slide .account-info .account-name :nth-child(2) {
+  font-size: 12px;
+}
+.toContact {
+  animation-name: slide;
+  animation-duration: 0.8s;
+  display: flex;
+  align-items: center;
+  width: 22px;
+  height: 100%;
+}
+.toContact:hover {
+  color: var(--navbar-background);
+}

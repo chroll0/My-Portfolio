@@ -1,0 +1,121 @@
+.education-container-content {
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+.education-container-content h1 {
+  width: 100%;
+  font-family: var(--font-header);
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  line-height: 60px;
+  padding: 0 0 0 60px;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+.experience-years {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0 0 60px;
+}
+.text-content-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 150px;
+}
+.margin-box {
+  margin: 0 2rem;
+}
+.years-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.text-content-box span {
+  font-size: 16px;
+  font-weight: 500;
+}
+.text-content-box p {
+  min-height: 55px;
+  margin-top: 0.7rem;
+  font-size: 14px;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+.line-content {
+  margin-right: 1rem;
+  width: 50px;
+  height: 2px;
+  content: "";
+  background: var(--line-gradient);
+}
+.courses-container {
+  width: 100%;
+  margin-top: 3rem;
+  padding: 0 0 0 60px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 2rem 2.5rem;
+}
+.courses-text-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: var(--navbar-background);
+  width: 300px;
+  height: 200px;
+  padding: 1.5rem;
+  box-shadow: 0 0 5px 1.1px var(--color-white);
+}
+.courses-text-box h4 {
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+}
+.courses-text-box p {
+  line-height: 25px;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+  text-transform: capitalize;
+  margin: 1rem 0;
+}
+.courses-text-box span {
+  text-transform: capitalize;
+  font-size: 12px;
+}
+@media screen and (max-width: 1050px) {
+  .courses-container {
+    grid-template-columns: repeat(2, auto);
+  }
+}
+@media screen and (max-width: 750px) {
+  .courses-container {
+    grid-template-columns: repeat(1, auto);
+  }
+  .education-container-content h1 {
+    font-size: 30px;
+    line-height: 50px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .experience-years {
+    flex-direction: column;
+  }
+  .margin-box {
+    margin: 1rem 0;
+  }
+  .courses-text-box {
+    width: 250px;
+    height: 250px;
+  }
+}

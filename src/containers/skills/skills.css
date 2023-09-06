@@ -1,0 +1,127 @@
+.skills-container-content {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.skills-container-content h1 {
+  width: 100%;
+  font-family: var(--font-header);
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  line-height: 60px;
+  padding: 0 0 0 60px;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+.about-my-skills {
+  padding-left: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-my-skills ul {
+  display: grid;
+  grid-template-columns: repeat(2, 300px);
+  grid-gap: 2rem 2.5rem;
+  list-style: none;
+}
+.about-my-skills ul li::before {
+  content: "Work Under Pressure - ";
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+.about-my-skills ul li:nth-child(2)::before {
+  content: "Fast Learner - ";
+}
+.about-my-skills ul li:nth-child(3)::before {
+  content: "Work in a Team - ";
+}
+.about-my-skills ul li:nth-child(4)::before {
+  content: "Communication Skills - ";
+}
+.about-my-skills ul li {
+  margin-bottom: 1rem;
+  line-height: 22px;
+  font-size: 16px;
+  letter-spacing: 0.4px;
+  text-align: justify;
+  font-weight: 400;
+}
+.skills-icons-container {
+  padding-left: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 2rem;
+}
+.frontend-development,
+.design,
+.others {
+  margin-top: 2rem;
+  width: 22%;
+  min-width: 250px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 1.5rem 1rem;
+  box-shadow: 0 0 5px 1.1px var(--color-white);
+}
+.design {
+  margin: 2rem 1rem 0 1rem;
+}
+.skills-icons-container h2 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  line-height: 28px;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+}
+.skills-icons {
+  width: 65%;
+  min-width: 190px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  font-size: 34px;
+}
+.skills-icons > *:nth-child(n) {
+  cursor: pointer;
+}
+.skills-icons * {
+  margin: 0.5rem;
+}
+@media screen and (max-width: 880px) {
+  .about-my-skills ul {
+    grid-template-columns: repeat(1, 270px);
+    grid-gap: 1rem 1.5rem;
+  }
+  .skills-icons-container {
+    flex-direction: column;
+    margin-top: 0rem;
+  }
+  .frontend-development,
+  .design,
+  .others {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .skills-container-content h1 {
+    font-size: 35px;
+    line-height: 50px;
+  }
+}

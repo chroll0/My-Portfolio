@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap");
+@font-face {
+  font-family: header-font;
+  src: url(../src/assets/header-font.otf);
+}
+:root {
+  --font-main: "Open Sans", sans-serif;
+  --font-header: "header-font", sans-serif;
+
+  --component-background: linear-gradient(
+    103.22deg,
+    #120023 -13.86%,
+    #001f26 99.55%
+  );
+  --overlay-background: linear-gradient(
+    103.22deg,
+    #10002196 -13.86%,
+    #001e2697 99.55%
+  );
+  --navbar-background: #0f0e1ae0;
+  --color-white: #ffffff;
+  --secondary-white-color: #ffffffd1;
+  --color-black: #000000;
+  --color-hover: #0f002edd;
+  --focus-border-color: #884bf0;
+  --hover-color: linear-gradient(
+    103.22deg,
+    #993ffaa0 -13.86%,
+    #1b97b397 99.55%
+  );
+  --button-gradient: linear-gradient(
+    103.22deg,
+    #993ffa -13.86%,
+    #1b97b3 99.55%
+  );
+  --line-gradient: linear-gradient(
+    103.22deg,
+    #ffffffee -13.86%,
+    #ffffff14 99.55%
+  );
+  --text-gradient: linear-gradient(89.97deg, #9250d8 1.84%, #00a3de 102.67%);
+}

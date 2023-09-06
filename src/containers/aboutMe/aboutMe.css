@@ -1,0 +1,207 @@
+.section-container {
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: var(--component-background);
+  background-size: cover;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  height: -webkit-fill-available;
+  color: var(--color-white);
+  padding: 65px 0;
+}
+.aboutMe-content {
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.aboutMe-ellipse {
+  width: 90%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.aboutMe-ellipse img {
+  width: 55%;
+  height: 90%;
+}
+.aboutMe-content h1 {
+  width: 100%;
+  font-family: var(--font-header);
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  line-height: 60px;
+  text-transform: capitalize;
+  padding: 0 0 0 60px;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+.image-text-content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  padding: 0 15px 0 75px;
+}
+.image-text-content ul {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-gap: 2rem 2.5rem;
+}
+.image-text-content ul li {
+  list-style: inside;
+  list-style-type: "▶  ";
+  font-size: 16px;
+  letter-spacing: 0.8px;
+  line-height: 25px;
+  text-transform: inherit;
+  max-width: 315px;
+  text-align: justify;
+}
+.aboutMe-sidebar-container {
+  min-width: 250px;
+  margin-left: 3rem;
+  background: var(--navbar-background);
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 0 5px 1.1px var(--color-white);
+}
+.profile-image-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.aboutMe-sidebar-container .profile-image-details img {
+  width: 170px;
+  border-radius: 5px;
+}
+.profile-image-details span {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 25px;
+  text-align: center;
+  margin: 1.5rem 0;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.profile-image-details .details h3 {
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 2px;
+
+  line-height: 28px;
+  margin-bottom: 1rem;
+}
+.email-box,
+.phone-box,
+.address-box {
+  width: 100%;
+  display: flex;
+  margin: 0 0 0.8rem 0;
+}
+.profile-image-details .details p {
+  font-size: 14px;
+  line-height: 20px;
+  text-align: start;
+  font-weight: 400;
+  letter-spacing: 0px;
+  margin-left: 0.5rem;
+}
+.resume-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.resume-container p {
+  font-size: 12px;
+  line-height: 18px;
+  margin: 1rem 0;
+}
+.resume-container a {
+  display: block;
+  text-align: center;
+  background: var(--color-white);
+  width: 160px;
+  height: 45px;
+}
+.resume-download-button {
+  width: 100%;
+  height: 100%;
+  text-transform: capitalize;
+  font-family: var(--font-main);
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  color: var(--color-white);
+  background: var(--button-gradient);
+  cursor: pointer;
+}
+.resume-download-button:hover {
+  border: 2px solid var(--color-white);
+}
+@media screen and (max-width: 800px) {
+  .section-container {
+    padding: 50px 0;
+  }
+  .image-text-content ul {
+    grid-template-columns: repeat(1, auto);
+    grid-gap: 2rem;
+  }
+  .aboutMe-sidebar-container {
+    margin-left: 1.5rem;
+  }
+  .aboutMe-ellipse img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .aboutMe-content h1 {
+    font-size: 30px;
+    line-height: 50px;
+  }
+}
+@media screen and (max-width: 560px) {
+  .image-text-content {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 0 0 0 60px;
+  }
+  .aboutMe-sidebar-container {
+    width: 85%;
+    margin-left: 0rem;
+    min-height: 600px;
+  }
+  .image-text-content ul {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .image-text-content ul li {
+    max-width: 80%;
+  }
+  .aboutMe-sidebar-container .profile-image-details img {
+    width: 160px;
+  }
+  .aboutMe-ellipse {
+    width: 80%;
+  }
+  .aboutMe-content h1 {
+    padding: 0 0 0 60px;
+  }
+}

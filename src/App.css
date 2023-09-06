@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  border: none;
+  font-family: var(--font-main);
+}
+body {
+  background: var(--component-background);
+  background-size: cover;
+  height: 100svh;
+  overflow-x: hidden;
+}
+a {
+  color: unset;
+  text-decoration: none;
+}
+@keyframes slide {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,107 @@
+.profile-container {
+  background: url("../../assets/welcome-background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  height: -webkit-fill-available;
+}
+.container-overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  height: 100%;
+  background: var(--overlay-background);
+}
+.profile-information {
+  z-index: 1;
+}
+.profile-information h1 {
+  color: var(--color-white);
+  font-family: var(--font-header);
+  font-size: 46px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  line-height: 60px;
+  text-transform: capitalize;
+  max-width: 610px;
+}
+.profile-information p {
+  color: var(--secondary-white-color);
+  font-family: var(--font-main);
+  font-size: 16px;
+  letter-spacing: 0.8px;
+  line-height: 25px;
+  text-transform: inherit;
+  max-width: 610px;
+  margin-bottom: 2rem;
+  text-align: justify;
+}
+.profile-information .profile-name {
+  font-size: 20px;
+  font-weight: 800;
+  margin: 3rem 0 0.5rem;
+  background: var(--text-gradient);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.profile-information button {
+  width: 160px;
+  height: 45px;
+  text-transform: capitalize;
+  color: var(--color-white);
+  font-family: var(--font-main);
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  background: var(--button-gradient);
+  cursor: pointer;
+}
+.profile-information button:hover {
+  border: 2px solid white;
+}
+.ellipse-img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.ellipse-img img {
+  width: 60%;
+  height: 90%;
+}
+@media screen and (max-width: 800px) {
+  .profile-information {
+    padding: 0 20px 0 80px;
+  }
+  .ellipse-img img {
+    width: 80%;
+  }
+  .profile-information h1 {
+    font-size: 35px;
+    line-height: 50px;
+  }
+  .profile-information p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .profile-information .profile-name {
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .ellipse-img img {
+    height: 80%;
+  }
+}
