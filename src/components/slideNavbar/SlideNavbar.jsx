@@ -13,21 +13,21 @@ const SlideNavbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
 
   return (
-    <div className={!toggleMenu ? "slide-bar" : "active-slide"}>
+    <div className={!toggleMenu ? "active-slide" : "slide-bar"}>
       <div className="slide-bar-box">
         <div className="logo-content active-logo-content">
           <span className="logo-style active-logo-style">Portfolio</span>
-          {toggleMenu ? (
-            <div className="close-nav" onClick={() => setToggleMenu(false)}>
+          {!toggleMenu ? (
+            <div className="close-nav" onClick={() => setToggleMenu(true)}>
               <MdClose />
             </div>
           ) : (
-            <div className="open-nav" onClick={() => setToggleMenu(true)}>
+            <div className="open-nav" onClick={() => setToggleMenu(false)}>
               <MdDehaze />
             </div>
           )}
         </div>
-        <div className={!toggleMenu ? "icon-content" : "active_icon-content"}>
+        <div className={!toggleMenu ? "active_icon-content" : "icon-content"}>
           <Link to="/">
             <div className="icons active-icons profile">
               <ImProfile />
@@ -72,7 +72,7 @@ const SlideNavbar = () => {
           <span>Saba Antadze</span>
           <span>Front end Developer</span>
         </div>
-        {toggleMenu && (
+        {!toggleMenu && (
           <Link to="contacts">
             <div className="toContact">
               <BsFillSendPlusFill size={22} />
